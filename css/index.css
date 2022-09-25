@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 1226px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #fff;
+}
+#head-links {
+  background-color: #333;
+  width: 100%;
+}
+#head-links .head-links-box {
+  width: 1226px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+#head-links .head-links-box .head-links-ul,
+#head-links .head-links-box .head-links-ul-right {
+  padding-inline-start: 0;
+  display: flex;
+  align-items: center;
+}
+#head-links .head-links-box .head-links-ul li,
+#head-links .head-links-box .head-links-ul-right li {
+  list-style: none;
+  cursor: pointer;
+  color: #b0b0b0;
+  font-size: 12px;
+}
+#head-links .head-links-box .head-links-ul li span,
+#head-links .head-links-box .head-links-ul-right li span {
+  display: inline-block;
+  border-right: 1px solid #424242;
+  padding: 0 10px;
+}
+#head-links .head-links-box .head-links-ul li:hover,
+#head-links .head-links-box .head-links-ul-right li:hover {
+  color: #fff;
+}
+#head-links .head-links-box .head-links-ul li:last-child span,
+#head-links .head-links-box .head-links-ul-right li:last-child span {
+  border: 0px;
+}
+#head-links .head-links-box .head-links-ul-right {
+  align-items: center;
+}
+#head-links .head-links-box .head-links-ul-right li {
+  line-height: 1em;
+  margin: 0;
+}
+#head-links .head-links-box .head-links-ul-right li:nth-child(3) span {
+  border: 0px;
+}
+#head-links .head-links-box .head-links-ul-right .car {
+  float: right;
+  width: 120px;
+  height: 40px;
+  line-height: 40px;
+  margin-left: 15px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  background-color: #424242;
+  position: relative;
+}
+#head-links .head-links-box .head-links-ul-right .car .slide-down {
+  position: absolute;
+  right: 0px;
+  top: 40px;
+  z-index: 31;
+  width: 316px;
+  height: 0;
+  color: #424242;
+  background: #fff;
+  -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  -webkit-transition: height 0.3s;
+  transition: height 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#head-links .head-links-box .head-links-ul-right .car:hover {
+  color: #ff6700;
+  background-color: #fff;
+}
+#head-links .head-links-box .head-links-ul-right .car:hover .slide-down {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
